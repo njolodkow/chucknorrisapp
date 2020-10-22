@@ -1,0 +1,8 @@
+.but{
+  border-radius: 5px;
+  padding: 5px;
+}
+
+:host ::ng-deep .custom-spinner circle{   
+    stroke: #ffffff;
+}

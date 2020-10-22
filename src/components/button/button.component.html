@@ -1,0 +1,16 @@
+<div>
+	<button 
+	[disabled]="processing || disabled" 
+	[style.width.%]="width" 
+	[style.font-size.px]="fontSize"
+	(click)="onClickButton($event)"
+	class="but"
+	[ngStyle]="{'background-color': color}">
+		<div style="display: inline-flex;">
+			<span> 
+				{{text}} &nbsp;
+			</span>
+			<mat-spinner *ngIf="processing" diameter="18" class="custom-spinner" style="margin:0 auto;" ></mat-spinner>
+		</div>
+	</button>
+</div>
